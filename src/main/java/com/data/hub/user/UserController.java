@@ -26,6 +26,11 @@ public class UserController {
         this.userService = userService;
     }
 
+    @GetMapping("/health")
+    public String health() {
+        return "Server is up and running...";
+    }
+
     @GetMapping
     public List<UserResponse> findAll() {
         return userService.findAll();
