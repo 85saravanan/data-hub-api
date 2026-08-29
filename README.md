@@ -15,16 +15,16 @@ mvn spring-boot:run
 
 The API starts on `http://localhost:8080` and uses an in-memory H2 database by default.
 
-## Azure MySQL
+## Azure SQL Server
 
-Use the `azure` profile when deploying with Azure Database for MySQL Flexible Server. Set these environment variables through the App Service configuration or deployment environment; do not commit database credentials:
+Use the `azure` profile when deploying with Azure SQL Database. Set these environment variables through the App Service configuration or deployment environment; do not commit database credentials:
 
 ```text
-AZURE_MYSQL_HOST=your-server.mysql.database.azure.com
-AZURE_MYSQL_PORT=3306
-AZURE_MYSQL_DATABASE=datahub
-AZURE_MYSQL_USERNAME=your-user
-AZURE_MYSQL_PASSWORD=your-password
+AZURE_SQL_SERVER_HOST=your-server.database.windows.net
+AZURE_SQL_SERVER_PORT=1433
+AZURE_SQL_SERVER_DATABASE=datahub
+AZURE_SQL_SERVER_USERNAME=your-user
+AZURE_SQL_SERVER_PASSWORD=your-password
 ```
 
 Start with the Azure profile:
